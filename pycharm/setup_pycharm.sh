@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the target directory where you want to create symbolic links
-TARGET_DIR="~/.config/"  # Modify this path as needed
+TARGET_DIR=$(find ~/.config/JetBrains/ -type d -name 'PyCharmCE*')
 
 # Make sure the target directory exists
 if [ ! -d "$TARGET_DIR" ]; then
